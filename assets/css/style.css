@@ -31,9 +31,9 @@ body {
 .bar {
     position: absolute;
     width: 20px;
-    height: 112px;
+    height: 84px;
     background: #888;
-    top: 180px;
+    top: 96.75px;
 }
 
 .left {
@@ -41,5 +41,5 @@ body {
 }
 
 .right {
-    left: 705px;
+    left: 521.25px;
 }
