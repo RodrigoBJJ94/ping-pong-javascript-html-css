@@ -3,18 +3,18 @@ let positionBallX, positionBallY;
 let positionPlayerX, positionPlayerY;
 let positionCpuX, positionCpuY;
 let directionPlayerY;
-let positionPlayerInitialY = 96.75; //180
+let positionPlayerInitialY = 105; //180
 let positionPlayerInitialX = 0;
-let positionCpuInititalY = 96.75; //180
-let positionCpuInititalX = 521.5; //930
-let positionBallInitialX = 270.625; //475
-let positionBallInitialY = 128.75; //240
+let positionCpuInititalY = 105; //180
+let positionCpuInititalX = 290; //930
+let positionBallInitialX = 155; //475
+let positionBallInitialY = 155; //240
 let fieldX = 0;
 let fieldY = 0;
-let fieldWidth = 551.25; //960
-let fieldHeight = 277.5; //500
+let fieldWidth = 320; //960
+let fieldHeight = 330; //500
 let barWidth = 20;
-let barHeight = 84; //140
+let barHeight = 120; //140
 let ballWidth = 20;
 let ballHeigth = 20;
 let ballX, ballY;
