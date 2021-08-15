@@ -3,18 +3,18 @@ let positionBallX, positionBallY;
 let positionPlayerX, positionPlayerY;
 let positionCpuX, positionCpuY;
 let directionPlayerY;
-let positionPlayerInitialY = 105; //180
+let positionPlayerInitialY = 315; //180
 let positionPlayerInitialX = 0;
-let positionCpuInititalY = 105; //180
-let positionCpuInititalX = 290; //930
-let positionBallInitialX = 155; //475
-let positionBallInitialY = 155; //240
+let positionCpuInititalY = 315; //180
+let positionCpuInititalX = 1890; //930
+let positionBallInitialX = 955; //475
+let positionBallInitialY = 455; //240
 let fieldX = 0;
 let fieldY = 0;
-let fieldWidth = 320; //960
-let fieldHeight = 330; //500
+let fieldWidth = 1920; //960
+let fieldHeight = 930; //500
 let barWidth = 20;
-let barHeight = 120; //140
+let barHeight = 300; //140
 let ballWidth = 20;
 let ballHeigth = 20;
 let ballX, ballY;
@@ -65,7 +65,7 @@ function controlBall() {
         (positionBallX <= positionPlayerX + barWidth) &&
         ((positionBallY + ballHeigth >= positionPlayerY) && (positionBallY <= positionPlayerY + barHeight))
     ) {
-        ballY = (((positionBallY + (ballHeigth / 2)) - (positionPlayerY + (barHeight / 2))) / 16);
+        ballY = (((positionBallY + (ballHeigth / 2)) - (positionPlayerY + (barHeight / 2))) / 32);
         ballX *= -1;
     }
 
@@ -73,11 +73,11 @@ function controlBall() {
         (positionBallX >= positionCpuX - barWidth) &&
         ((positionBallY + ballHeigth >= positionCpuY) && (positionBallY <= positionCpuY + barHeight))
     ) {
-        ballY = (((positionBallY + (ballHeigth / 2)) - (positionCpuY + (barHeight / 2))) / 16);
+        ballY = (((positionBallY + (ballHeigth / 2)) - (positionCpuY + (barHeight / 2))) / 32);
         ballX *= -1;
     }
     //480
-    if ((positionBallY >= 257.5) || (positionBallY <= 0)) {
+    if ((positionBallY >= 920) || (positionBallY <= 0)) {
         ballY *= -1;
     }
 
