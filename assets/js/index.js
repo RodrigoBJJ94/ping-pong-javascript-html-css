@@ -3,18 +3,18 @@ let positionBallX, positionBallY;
 let positionPlayerX, positionPlayerY;
 let positionCpuX, positionCpuY;
 let directionPlayerY;
-let positionPlayerInitialY = 310; 
+let positionPlayerInitialY = 165; 
 let positionPlayerInitialX = 0;
-let positionCpuInititalY = 310; 
-let positionCpuInititalX = 1880; 
-let positionBallInitialX = 950; 
-let positionBallInitialY = 450; 
+let positionCpuInititalY = 165; 
+let positionCpuInititalX = 290; 
+let positionBallInitialX = 155; 
+let positionBallInitialY = 260; 
 let fieldX = 0;
 let fieldY = 0;
-let fieldWidth = 1910; 
-let fieldHeight = 920; 
+let fieldWidth = 320; 
+let fieldHeight = 530; 
 let barWidth = 20;
-let barHeight = 300; 
+let barHeight = 200; 
 let ballWidth = 20;
 let ballHeigth = 20;
 let ballX, ballY;
@@ -77,7 +77,7 @@ function controlBall() {
         ballX *= -1;
     }
 
-    if ((positionBallY >= 900) || (positionBallY <= 0)) {
+    if ((positionBallY >= 510) || (positionBallY <= 0)) {
         ballY *= -1;
     }
 

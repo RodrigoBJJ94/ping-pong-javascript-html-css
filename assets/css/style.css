@@ -15,15 +15,15 @@ body {
 }
 
 .div-game {
-    width: 1910px;
-    height: 920px;
+    width: 320px;
+    height: 530px;
     background: black;
 }
 
 .div-ball {
     position: absolute;
-    top: 450px;
-    left: 950px;
+    top: 260px;
+    left: 155px;
     width: 20px;
     height: 20px;
     background: #888;
@@ -32,9 +32,9 @@ body {
 .bar {
     position: absolute;
     width: 20px;
-    height: 300px;
+    height: 200px;
     background: #888;
-    top: 310px;
+    top: 165px;
 }
 
 .left {
@@ -42,7 +42,7 @@ body {
 }
 
 .right {
-    left: 1880px;
+    left: 290px;
 }
 
 button {
