@@ -3,18 +3,18 @@ let positionBallX, positionBallY;
 let positionPlayerX, positionPlayerY;
 let positionCpuX, positionCpuY;
 let directionPlayerY;
-let positionPlayerInitialY = 315; //180
+let positionPlayerInitialY = 310; 
 let positionPlayerInitialX = 0;
-let positionCpuInititalY = 315; //180
-let positionCpuInititalX = 1890; //930
-let positionBallInitialX = 955; //475
-let positionBallInitialY = 455; //240
+let positionCpuInititalY = 310; 
+let positionCpuInititalX = 1880; 
+let positionBallInitialX = 950; 
+let positionBallInitialY = 450; 
 let fieldX = 0;
 let fieldY = 0;
-let fieldWidth = 1920; //960
-let fieldHeight = 930; //500
+let fieldWidth = 1910; 
+let fieldHeight = 920; 
 let barWidth = 20;
-let barHeight = 300; //140
+let barHeight = 300; 
 let ballWidth = 20;
 let ballHeigth = 20;
 let ballX, ballY;
@@ -76,8 +76,8 @@ function controlBall() {
         ballY = (((positionBallY + (ballHeigth / 2)) - (positionCpuY + (barHeight / 2))) / 32);
         ballX *= -1;
     }
-    //480
-    if ((positionBallY >= 920) || (positionBallY <= 0)) {
+
+    if ((positionBallY >= 900) || (positionBallY <= 0)) {
         ballY *= -1;
     }
 
@@ -137,7 +137,7 @@ function gamePong() {
 
 function start() {
     if (!game) {
-        velocityBall = velocityCpu = velocityPlayer = 8;
+        velocityBall = velocityCpu = velocityPlayer = 10;
         cancelAnimationFrame(frames);
         game = true;
         directionPlayerY = 0;
@@ -158,7 +158,7 @@ function start() {
 }
 
 function bootUp() {
-    velocityBall = velocityCpu = velocityPlayer = 8;
+    velocityBall = velocityCpu = velocityPlayer = 10;
     buttonStart = document.querySelector('.start');
     buttonStart.addEventListener('click', start);
     player = document.querySelector('#div-player');
